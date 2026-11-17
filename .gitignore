@@ -1,0 +1,23 @@
+# Data and models are far too big for Git - real copies live on the Oracle block volume / Object Storage.
+data/**
+!data/**/
+!data/**/.gitkeep
+models/**
+!models/**/
+!models/**/.gitkeep
+
+# Secrets
+environments/*.env
+!environments/*.env.example
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Notebooks
+.ipynb_checkpoints/
